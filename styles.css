@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
  }
-
- body {
+h1, p {
+    text-align: center;
+}
+ .grid-section {
     display: flex;
     align-items: center;
   }
