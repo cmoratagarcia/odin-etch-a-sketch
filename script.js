@@ -14,7 +14,6 @@ startBtn.addEventListener("click", function () {
   }
 });
 
-//Initialize function at 16 * 16
 //Create function that takes user input and converts it to div grid
 function createGrid(string) {
   //Convert user input to number and make it square
@@ -37,6 +36,13 @@ function createGrid(string) {
       `grid-template-columns: repeat(${toNumber}, 1fr); grid-template-rows: repeat(${toNumber}, 1fr)`
     );
   }
-}
 
+  const pixels = document.querySelectorAll(".square");
+  pixels.forEach((pixel) => {
+    pixel.addEventListener("click", () => {
+      pixel.classList.add("dark");
+    });
+  });
+}
+//Initialize function at 16 * 16, as per project requirement
 createGrid(16);

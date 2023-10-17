@@ -35,3 +35,7 @@
     border: 1px solid black;
     display: block;
 }
+
+.dark {
+    background-color: blue;
+}
