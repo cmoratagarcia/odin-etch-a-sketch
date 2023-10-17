@@ -42,7 +42,13 @@ function createGrid(string) {
     pixel.addEventListener("mouseover", () => {
       pixel.classList.toggle("dark");
     });
+    pixel.addEventListener("click", () => {
+      pixels.forEach((pixel) => {
+        pixel.classList.remove("dark");
+      });
+    });
   });
 }
+
 //Initialize function at 16 * 16, as per project requirement
 createGrid(16);
