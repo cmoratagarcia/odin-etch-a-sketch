@@ -5,12 +5,17 @@ let divString = prompt("Please enter a number between 0 and 100");
 //Initialize function at 16 * 16
 function createGrid(string) {
   //Convert user input to number and make it square
-  let divQtty = Number(string) * Number(string);
+  let toNumber = Number(string);
+  let divQtty = toNumber * toNumber;
 
   for (let i = 0; i < divQtty; i++) {
     let square = document.createElement("div");
     container.appendChild(square);
     square.classList.add("square");
+    container.setAttribute(
+      "style",
+      `grid-template-columns: repeat(${toNumber}, 1fr); grid-template-rows: repeat(${toNumber}, 1fr)`
+    );
   }
 }
 createGrid(divString);
