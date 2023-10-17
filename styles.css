@@ -2,6 +2,20 @@
     box-sizing: border-box;
  }
 
+ #start-button {
+    cursor: pointer;
+    background-color: #1899D6;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 16px;
+    padding: 13px 16px;
+    text-align: center;
+ }
+
+ #start-button:hover{
+    transform: scale(1.1);
+ }
 .container {
     margin: 0 auto;
     width: 600px;
