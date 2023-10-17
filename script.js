@@ -1,5 +1,18 @@
 const container = document.querySelector(".container");
-let divString = prompt("Please enter a number between 0 and 100");
+const startBtn = document.querySelector("#start-button");
+
+startBtn.addEventListener("click", function () {
+  // Get user input using prompt
+  const userInput = prompt(
+    "Enter a number to set the size of your grid (0 to 100)"
+  );
+
+  // Check if the user entered a value
+  if (userInput !== null) {
+    // Call the createGrid function with the user input
+    createGrid(userInput);
+  }
+});
 
 //Initialize function at 16 * 16
 //Create function that takes user input and converts it to div grid
@@ -13,6 +26,7 @@ function createGrid(string) {
     return;
   }
   let divQtty = toNumber * toNumber;
+  container.innerHTML = "";
 
   for (let i = 0; i < divQtty; i++) {
     let square = document.createElement("div");
@@ -24,4 +38,5 @@ function createGrid(string) {
     );
   }
 }
-createGrid(divString);
+
+createGrid(16);
