@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
-const startBtn = document.querySelector("#start-button");
+const sizeBtn = document.querySelector("#size-button");
 
-startBtn.addEventListener("click", function () {
+sizeBtn.addEventListener("click", function () {
   // Get user input using prompt
   const userInput = prompt(
     "Enter a number to set the size of your grid (0 to 100)"
