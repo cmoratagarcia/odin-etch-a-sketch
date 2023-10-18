@@ -40,7 +40,7 @@ function createGrid(string) {
   const pixels = document.querySelectorAll(".square");
   pixels.forEach((pixel) => {
     pixel.addEventListener("mouseover", () => {
-      pixel.classList.toggle("dark");
+      pixel.classList.add("dark");
     });
     pixel.addEventListener("click", () => {
       pixels.forEach((pixel) => {
