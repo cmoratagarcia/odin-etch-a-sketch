@@ -10,17 +10,16 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!--Add a button to the top of the screen that will send the user a popup asking for the number of squares-->
-    <section class="settings">
-      <input type="button" id="size-button" value="Draw new grid" />
-    </section>
+    <h1>Etch-a-Sketch</h1>
+    <p>Hover the mouse to paint. To reset, just click anywhere on the grid.</p>
 
-    <section class="grid-section">
-      <h1>Etch-a-Sketch</h1>
-      <p>
-        Hover the mouse to paint. To reset, just click anywhere on the grid.
-      </p>
+    <!--Add a button to the top of the screen that will send the user a popup asking for the number of squares-->
+    <div class="sketchpad">
+      <div class="settings">
+        <input type="button" id="size-button" value="Draw new grid" />
+      </div>
+
       <div class="container"></div>
-    </section>
+    </div>
   </body>
 </html>
