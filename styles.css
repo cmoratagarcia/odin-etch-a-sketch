@@ -1,15 +1,18 @@
 * {
     box-sizing: border-box;
  }
-h1, p {
-    text-align: center;
-}
- .grid-section {
+.sketchpad {
     display: flex;
-    align-items: center;
-  }
+    flex-direction: row;
 
- #start-button {
+}
+.settings {
+    padding: 15px 30px;
+    display:  flex;
+    flex-direction:  column;
+}
+
+#size-button {
     cursor: pointer;
     background-color: #1899D6;
     color: #FFFFFF;
@@ -20,23 +23,36 @@ h1, p {
     width: 300px;
     padding: 13px 16px;
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
  }
 
- #start-button:hover{
+ #size-button:hover{
     transform: scale(1.1);
  }
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .container {
-    margin: 20px auto;
-    width: 650px;
-    height: 650px;
+    margin-left: 80px;
+    width: 550px;
+    height: 550px;
     display: grid;
     gap: 0;
 }
 .square {
     border: 1px solid darkgrey;
-    display: block;
-}
+ }
 
 .dark {
     background-color: black;
