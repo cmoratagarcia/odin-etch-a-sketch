@@ -16,14 +16,13 @@ sizeBtn.addEventListener("click", function () {
 
 //Create function that takes user input and converts it to div grid
 function createGrid(string) {
-  //Convert user input to number and make it square
   let toNumber = Number(string);
-  //Error if number is higher that 100
-  if (toNumber > 100 || toNumber < 0) {
-    //Add error if NaN
+  //Error if number is higher that 100/lower than 0 or is NaN
+  if (toNumber > 100 || toNumber < 0 || isNaN(toNumber)) {
     alert("Wrong value!");
     return;
   }
+  //Make the number square
   let divQtty = toNumber * toNumber;
   container.innerHTML = "";
 
