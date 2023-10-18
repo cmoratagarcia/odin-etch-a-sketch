@@ -31,13 +31,13 @@ h1, p {
     width: 650px;
     height: 650px;
     display: grid;
-    gap: 1px;
+    gap: 0;
 }
 .square {
-    border: 1px solid black;
+    border: 1px solid darkgrey;
     display: block;
 }
 
 .dark {
-    background-color: blue;
+    background-color: black;
 }
